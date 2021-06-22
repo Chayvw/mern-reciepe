@@ -3,6 +3,7 @@ import axios from 'axios';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './Containers/Home';
 import NoMatch from './Containers/NoMatch';
+import Search from './Containers/Search';
 
 // import './App.css';
 function App() {
@@ -15,6 +16,7 @@ function App() {
   <Router>
 <Switch>
   <Route exact path='/' component={Home} />
+  <Route path='/search' component={Search} />
   <Route component={NoMatch} />
 </Switch>
   </Router>
