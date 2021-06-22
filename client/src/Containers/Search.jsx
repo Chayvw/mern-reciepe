@@ -20,9 +20,9 @@ class Search extends Component {
                 url:url,
                 method:'GET'
             }).then((response)=>{
-                console.log(response.data)
+                console.log(response)
                 this.setState({
-                    results: response.data
+                    results: response
 
                 }).catch(()=>{
                     alert("Error")
