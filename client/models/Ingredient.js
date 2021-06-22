@@ -8,7 +8,10 @@ const IngredientSchema = new Schema({
         trim:true,
         required: "Ingredient name is required"
     },
-    
+    isVegetarian :{
+        type: Boolean,
+        default: false,
+    }
 
 })
 
